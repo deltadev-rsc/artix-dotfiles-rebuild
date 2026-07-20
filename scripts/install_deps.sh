@@ -70,6 +70,8 @@ function install_deps {
                 sudo pacman -S git 
             fi 
 
+            sudo pacman -S gesettings-system-schemas gsettins-desktop-schemas
+
             echo "installing fish shell and tide theme"
             sudo pacman -S fish 
             curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
