@@ -1,8 +1,8 @@
 import "~/.vim/plugins.vim"
 import "~/.vim/mappings.vim"
 
-autocmd VimEnter * :colorscheme gruvbox-material 
-autocmd VimEnter * :AirlineTheme gruvbox_material
+autocmd VimEnter * :colorscheme nord
+autocmd VimEnter * :AirlineTheme nord
 
 set number
 set relativenumber
@@ -18,6 +18,10 @@ set laststatus=2
 set termguicolors
 set background=dark
 
+set mouse=a
+
+set t_Co=256
+
 if $COLORTERM == 'truecolor' || $COLORTERM == '24bit'
     set termguicolors
 endif
@@ -27,5 +31,5 @@ set nocompatible
 
 syntax enable
 if has('syntax')
-  syntax enable
+    syntax enable
 endif
