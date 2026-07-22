@@ -1,0 +1,13 @@
+#!/sbin/openrc-run
+
+name="SDDM"
+description="graphical login manager"
+command="/usr/bin/sddm"
+command_args="-- daemon"
+pidfile="/run/sddm.pid"
+command_background="yes"
+
+depend() {
+    need localmount
+    after xdm
+}
